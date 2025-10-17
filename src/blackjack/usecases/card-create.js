@@ -6,10 +6,10 @@
  */
 
 export const crearCarta = (carta, contenedor) => {
-    if ( !carta ) throw new Error('Carta es necesaria');
+	if (!carta) throw new Error("Carta es necesaria");
 
 	const imgCarta = document.createElement("img");
-	imgCarta.src = `/assets/cartas/${carta}.png`; // src/app/cartas/3C.png
+	imgCarta.src = `./assets/cartas/${carta}.png`; // src/app/cartas/3C.png
 	imgCarta.classList.add("carta");
 	contenedor.append(imgCarta);
 };
